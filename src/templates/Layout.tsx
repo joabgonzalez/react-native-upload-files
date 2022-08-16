@@ -32,7 +32,7 @@ export default function Layout(props: Props) {
         {!!iconButton && (
           <TouchableOpacity
             style={[styles.button]}
-            onPress={() => !!onPressButton && onPressButton}
+            onPress={() => !!onPressButton && onPressButton()}
           >
             {iconButton}
           </TouchableOpacity>
